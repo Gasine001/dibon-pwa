@@ -1,0 +1,355 @@
+/* ==== "Inter" FONT-FAMILY FROM FONTS.GOOGLE.COM  ==== */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap");
+/* ==== ROOT RESET ==== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* ==== CSS VARIABLES ==== */
+:root {
+  --primary-color: #335eea;
+  --link-color: #506690;
+  --btn-hover-color: #2b50c7;
+  --lg-heading: #161c2d;
+  --text-content: #869ab8;
+  --fixed-header-height: 4.5rem;
+}
+
+/* ==== RESET HTML ==== */
+
+ul li {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
+button {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+ 
+/* ==== CONTAINER ==== */
+.container {
+  width: 100%;
+}
+@media screen and (min-width: 1040px) {
+  .container {
+    width: 1040px;
+    margin: 0 auto;
+  }
+}
+/* ==== HEADER ==== */
+.header {
+  height: var(--fixed-header-height);
+  padding: 0 1.7rem;
+}
+
+/* ==== NAV ==== */
+.nav {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+/* ==== LOGO ==== */
+.logo h2 {
+  font-size: 28px;
+  color: var(--primary-color);
+}
+/* ====  NAV-MENU  ==== */
+.nav_menu_list {
+  display: flex;
+  align-items: center;
+}
+.nav_menu_list .nav_menu_item {
+  margin: 0 2rem;
+}
+.nav_menu_item .nav_menu_link {
+  font-size: 16.5px;
+  line-height: 27px;
+  color: #6300a5;
+  text-transform: capitalize;
+  letter-spacing: 0.5px;
+}
+.nav_menu_link:hover {
+  color: var(--primary-color);
+}
+.toggle_btn {
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--lg-heading);
+  z-index: 4;
+}
+.nav_menu,
+.close_btn {
+  display: none;
+}
+.show {
+  right: 3% !important;
+}
+
+footer {
+  width: 100%;
+  background-color: #6300a5;
+  height: 50px;
+  margin-top: 8rem;
+}
+
+/* ==== MEDIA QURIES FOR RESPONSIVE DESIGN ==== */
+@media screen and (min-width: 768px) {
+  .toggle_btn {
+    display: none;
+  }
+  .nav_menu {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .logo h2 {
+    font-size: 23px;
+  }
+  .nav_menu {
+    position: fixed;
+    width: 93%;
+    height: 100%;
+    display: block;
+    top: 2.5%;
+    right: -100%;
+    background-color: #fff;
+    padding: 3rem;
+    border-radius: 10px;
+    box-shadow: 0 0.5rem 1.5rem rgba(22, 28, 45, 0.1);
+    z-index: 50;
+    transition: 0.4s;
+  }
+  .nav_menu_list {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 4rem;
+  }
+  .nav_menu_list .nav_menu_item {
+    margin: 1rem 0;
+  }
+  .nav_menu_item .nav_menu_link {
+    font-size: 18px;
+  }
+}
+
+
+  
+body{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(48, 46, 46);
+    background-color: rgba(224, 217, 217, 0.863);
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 25px;
+}
+hr{
+    width: 80%;
+}
+h2{
+    font-size: 20px;
+}
+.contact-items{
+    display: flex;
+    margin: 30px auto;
+    flex-wrap: wrap;
+    align-items: center;
+
+}
+.customer-care,.write-us,.sales-market{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 28%;
+    margin: 30px auto;
+    padding: 35px 15px;
+    border-radius: 15px;
+    text-align: center;
+    font-size: larger;
+    min-width: 250px;
+    
+}
+.customer-care{
+    height: 250px;
+    box-shadow: 0 15px 15px green;
+    border: 1px solid green;
+}
+.write-us{
+    height: 250px;
+    box-shadow: 0 15px 15px red;
+    border: 1px solid red;
+}
+.sales-market{
+    height: 250px;
+    box-shadow: 0 15px 15px blue;
+    border: 1px solid blue;
+}
+p{
+    font-size: 15px;
+}
+button{
+    padding: 8px 16px;
+    font-size: 17px;
+    border-radius: 25px;
+    border: none;
+    margin: 15px auto;
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+}
+button:hover{
+    color: gray;
+}
+#cust-care{
+    background: green;
+
+    box-shadow: 0 0 5px black;
+}
+#write{
+    background: rgb(187, 15, 15);
+
+    box-shadow: 0 0 5px black;
+}
+#sales{
+    background: blue;
+    box-shadow: 0 0 5px black;
+}
+a{
+    font-size: 20px;
+}
+.customer-care a{
+    color: green;
+    text-shadow: 0 0 2px rgba(73, 129, 80, 0.637);
+}
+.sales-market a{
+    color: blue;
+    text-shadow: 0 0 2px rgba(76, 62, 158, 0.637);
+}
+
+
+/* ==== HEADER ==== */
+.header {
+  height: var(--fixed-header-height);
+  width: 100%;
+  padding: 0 1.7rem;
+  background-color: #e4c200;
+}
+
+/* ==== NAV ==== */
+.nav {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+/* ==== LOGO ==== */
+.logo h2 {
+  font-size: 28px;
+  color: #6300a5;
+  
+}
+/* ====  NAV-MENU  ==== */
+.nav_menu_list {
+  display: flex;
+  align-items: center;
+}
+.nav_menu_list .nav_menu_item {
+  margin: 0 2rem;
+}
+.nav_menu_item .nav_menu_link {
+  font-size: 16.5px;
+  line-height: 27px;
+  color: #6300a5;
+  text-transform: capitalize;
+  letter-spacing: 0.5px;
+}
+.nav_menu_link:hover {
+  color: var(--primary-color);
+}
+.toggle_btn {
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--lg-heading);
+  z-index: 4;
+}
+.nav_menu,
+.close_btn {
+  display: none;
+}
+.show {
+  right: 3% !important;
+}
+
+/* ==== MEDIA QURIES FOR RESPONSIVE DESIGN ==== */
+@media screen and (min-width: 768px) {
+  .toggle_btn {
+    display: none;
+  }
+  .nav_menu {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .logo h2 {
+    font-size: 23px;
+  }
+  .nav_menu {
+    position: fixed;
+    width: 93%;
+    height: 100%;
+    display: block;
+    top: 2.5%;
+    right: -100%;
+    background-color: #fff;
+    padding: 3rem;
+    border-radius: 10px;
+    box-shadow: 0 0.5rem 1.5rem rgba(22, 28, 45, 0.1);
+    z-index: 50;
+    transition: 0.4s;
+  }
+  .nav_menu_list {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 4rem;
+  }
+  .nav_menu_list .nav_menu_item {
+    margin: 1rem 0;
+  }
+  .nav_menu_item .nav_menu_link {
+    font-size: 18px;
+  }
+  .close_btn {
+    display: block;
+    position: absolute;
+    right: 10%;
+    font-size: 25px;
+    color: #50689e;
+  }
+  .close_btn:hover {
+    color: #000;
+  }
+ 
+}
+
+  
